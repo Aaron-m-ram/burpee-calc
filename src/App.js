@@ -4,14 +4,18 @@ import Button from "./components/Button";
 import Dropdown from "./components/Dropdown"
 import LabelInput from "./components/Label+Input";
 
+import {ageGetter,burpee} from "./data/Logic";
 
+/*     alert("You clicked the button\n" + "Age: "+ ageInput + 
+      "\nBurpee: " +burpInput+ "\nGender: "+ selectedValue); */
 
 function App() {
   
   //handle the clicks for submit button
   const handleClick= ()=> {
-    alert("You clicked the button\n" + "Age: "+ ageInput + 
-      "\nBurpee: " +burpInput+ "\nGender: "+ selectedValue);
+    let scoresheet = ageGetter(ageInput, selectedValue) //working
+    let finalScore = burpee(burpInput, scoresheet)
+    alert("Burpees: " +  burpInput + "final score"+ finalScore)
   }
 
   //handle the states for the label inputs
@@ -21,8 +25,13 @@ function App() {
   const onChange = (e) => setBurpInput(e.target.value)
   
   //handles the states for the Dropdown
-  const [selectedValue, setSelectedValue] = useState();
+  const [selectedValue, setSelectedValue] = useState("");
   const handleChange = (e) => setSelectedValue(e.target.value)
+
+
+
+
+
 
 
 

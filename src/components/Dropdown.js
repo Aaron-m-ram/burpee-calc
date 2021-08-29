@@ -6,6 +6,7 @@ const Dropdown = ({optionsState, handleChange}) => {
             className="form-select focus:outline-none focus:ring focus:border-white rounded-sm mt-1"
             value = {optionsState}
             onChange = {handleChange}>
+                <option value="0">please pick</option>
                 <option value="1">Male</option>
                 <option value="2">Female</option>
         </select>

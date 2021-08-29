@@ -1,6 +1,6 @@
-import React from 'react'
+/* 
 
-let mPuScoreSheet17_24 = [
+let mBurp17_24 = [
     {count: 30, points: 1},
     {count: 31, points: 4},
     {count: 32, points: 7},
@@ -41,7 +41,7 @@ let mPuScoreSheet17_24 = [
     {count: 67, points: 20},
   ]; // push up scoresheet
 
-let fPuScoreSheet17_24 = [
+let fBurp17_24 = [
     {count: 15, points: 1},
     {count: 16, points: 4},
     {count: 17, points: 7},
@@ -78,16 +78,4 @@ let fPuScoreSheet17_24 = [
   
 ]; // push up scoresheet
 
-  function pushUpsGetter(pushUps, scoreSheet) {
-    if(pushUps < scoreSheet[0].count || pushUps == null || pushUps == undefined || isNaN(pushUps) === true){
-        return 0
-    } else if(pushUps > scoreSheet[scoreSheet.length - 1].count){
-      return 20
-    } else{
-        for(var i = 0; i<scoreSheet.length; i++){
-            if(pushUps == scoreSheet[i].count){
-            return scoreSheet[i].points
-            }
-        }
-    }
-};
+ */
