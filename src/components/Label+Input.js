@@ -1,6 +1,6 @@
 import React from "react"
 
-const LabelInput = ({name,clnvar,input,ch})=> {
+const LabelInput = ({name,clnvar,input})=> {
 
     return (
         <div className="pt-2 pb-1">
